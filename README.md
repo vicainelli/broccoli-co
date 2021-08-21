@@ -30,3 +30,5 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `yarn cypress open-ct`
+
+Cypress Component Test Runner brings everything that is great about Cypress to component testing.
