@@ -1,0 +1,8 @@
+{
+  "viewportWidth": 360,
+  "viewportHeight": 740,
+  "component": {
+    "testFiles": "**/*.cy.{js,ts,jsx,tsx}",
+    "componentFolder": "src"
+  }
+}
