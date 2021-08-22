@@ -3,7 +3,8 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Button from "../../atoms/button";
-import axios from "axios";
+// import axios from "axios";
+import API from "services/api";
 const API_URL =
   "https://l94wc2001h.execute-api.ap-southeast-2.amazonaws.com/prod/fake-auth";
 
@@ -44,11 +45,10 @@ const FormSignUp = () => {
 
   const onSubmit = (data: FormInputs) => {
     setIsFormLoading(true);
-    axios
-      .post(API_URL, {
-        name: data.name,
-        email: data.email,
-      })
+    API.post(API_URL, {
+      name: data.name,
+      email: data.email,
+    })
       .then((res) => {
         console.log(res);
         setIsSuccessfullySignedUp(true);

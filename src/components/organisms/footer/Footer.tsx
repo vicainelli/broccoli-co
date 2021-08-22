@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+const Footer = () => {
   return (
     <div
       data-testid="app_footer"
@@ -16,6 +16,6 @@ function Footer() {
       </footer>
     </div>
   );
-}
+};
 
 export default Footer;
